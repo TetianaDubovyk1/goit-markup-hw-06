@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo" href="./index.html"
@@ -65,8 +65,89 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="header-menu-btn">
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu">
+        <button class="menu-close-btn" type="button">
+          <svg class="mob-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav>
+          <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="./index.html" target="_blank"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="" target="_blank">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="" target="_blank">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-contacts-wrap">
+          <address class="mob-contacts">
+            <ul class="mob-contacts-list">
+              <li class="mob-contacts-item">
+                <a
+                  class="mob-contacts-link"
+                  href="tel:+110001111111"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-contacts-link">
+                <a
+                  class="mob-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-socialmedia-list">
+            <li class="mob-socialmedia-item">
+              <a class="mob-socialmedia-link" href="" target="_blank"
+                ><svg class="mob-socialmedia-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-socialmedia-item">
+              <a class="mob-socialmedia-link" href="" target="_blank"
+                ><svg class="mob-socialmedia-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-socialmedia-item">
+              <a class="mob-socialmedia-link" href="" target="_blank"
+                ><svg class="mob-socialmedia-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-socialmedia-item">
+              <a class="mob-socialmedia-link" href="" target="_blank"
+                ><svg class="mob-socialmedia-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -650,7 +731,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" width="8" height="8">
@@ -726,10 +807,10 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-              <div class="checkbox-lable-text">
+              <span class="checkbox-lable-text">
                 I accept the terms and conditions of the&nbsp
                 <a class="privacy-link" href="">Privacy Policy</a>
-              </div>
+              </span>
             </label>
           </div>
           <button class="form-btn" type="submit">Send</button>
