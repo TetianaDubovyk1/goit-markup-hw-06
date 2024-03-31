@@ -675,7 +675,6 @@ img{
     background-color: inherit;
     border: 1px solid #fff;
     border-radius: 4px;
-    /* width: 264px; */
     width: 288px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -704,7 +703,7 @@ img{
     border-radius: 4px;
     padding: 8px 24px;
     background-color: #4d5ae5;
-    /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15); */
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -872,10 +871,11 @@ img{
 }
 
 .form-textarea-container{
-    margin-bottom: 16px;
+       margin-bottom: 16px;
 }
 
 .form-textarea{
+    display: block;
     height: 120px;
     width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -901,33 +901,28 @@ img{
     color: rgba(46, 47, 66, 0.4);
 }    
 
-.form-checkbox-container{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 24px;
-}
-
-.form-checkbox{
-    height: 16px;
-    width: 16px;
-    /* display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px; */
-}
-
-.form-checkbox-lable{
+.form-checkbox-container {
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.form-checkbox {
+    width: 16px;
+    height: 16px;    
+}
+
+.form-checkbox-lable {
+    display: flex;
+    align-items: center;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
 
-.form-checkbox-lable span{
+.checkbox-span {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -935,23 +930,20 @@ img{
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin-right: 8px;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-checkbox:checked + .form-checkbox-lable span{
+.form-checkbox:checked+.form-checkbox-lable .checkbox-span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
 }
 
-.form-chekbox-icon{}
+.form-chekbox-icon {}
 
-.checkbox-lable-text{
-
-}
-
-.privacy-link{
+.privacy-link {
     line-height: 1.33;
     text-decoration: underline;
     text-transform: capitalize;
